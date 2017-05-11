@@ -1,0 +1,72 @@
+
+1Changing the port for a single project on a single run
+run-app -Dserver.port=9090 
+
+2.Changing the port for a single project permanently
+(Buildconfig)
+grails.project.work.dir = "target/work"
+grails.project.target.level = 1.6
+grails.project.source.level = 1.6
+grails.server.port.http = 9091
+
+3.Changing the port for all Grails projects permanently
+Shell
+(settings.groovy)
+grails.server.port.http = 9092
+
+
+
+cp -a /source/. /dest/
+
+http://stackoverflow.com/questions/7056959/convert-string-to-equivalent-enum-value
+
+// logout
+ SecurityContextHolder.clearContext()
+           session.invalidate()
+
+def appointment = AppointmentDetail.createCriteria().list {
+            eq'appointmentDate', {
+                projections {
+                    max "appointmentDate"
+                }
+            }
+        }
+
+ AppointmentDetail appointment = AppointmentDetail.createCriteria().get {
+            eq("appointedTo",clientInformation)
+            inList('appointmentStatus',[AppointmentStatus.valueOf('Approved'), AppointmentStatus.valueOf('Pending')])
+            eq'appointmentDate', {
+                projections {
+                    max "appointmentDate"
+                }
+            }
+        }
+
+
+
+go to project directory
+Type command git init
+Type command git add --all
+ (git remote add origin YOUR_LINK_TO_REPO)
+Type command git commit -m "my first commit"
+Type command git push -u origin master
+
+Note: if you get error unable to detect email or name, just type following commands after 5th step:
+
+ git config --global user.email "yourEmail"  #your email at Bitbucket
+ git config --global user.name "yourName"  #your name at Bitbucket
+
+
+convert filename.jpg -resize 50% newname.jpg
+
+checking class of variable
+someObject.getClass()
+
+
+
+
+mysqldump database_name > database_name.sql
+
+mysql database_name < database_name.sql
+
+mysql database_name < database_name.sql
